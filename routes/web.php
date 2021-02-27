@@ -14,15 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/', 'PagesController@index');
 Route::get('/about', 'PagesController@about');
+Auth::routes();
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+
 Route::get('/about',function(){
     return view('pages.about');
 });
 
 Route::resource('posts','PostsController');
-// Route::get('/users/{id}',function($id){
-//     return 'This is user'.$id;
-// });
+
+
+
+Route::get('/dashboard', 'DashboardController@index');
