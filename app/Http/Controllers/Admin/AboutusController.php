@@ -23,14 +23,32 @@ class AboutusController extends Controller
         $aboutus->description= $request->input('description');
         
         $aboutus->save();
-        return redirect('/aboutus')->with('status','Data added for About Us');
+        return redirect('/abouts')->with('status','Data added for About Us');
 
     }
 
     public function edit($id){
         $aboutus= Abouts::findOrFail($id);
-        return view('admin.aboutus-edit')->with('aboutus',$aboutus);
- 
+        return view('admin.abouts.edit')->with('aboutus',$aboutus);
 
     }
+
+    public function update(Request $request,$id){
+        $aboutus= Abouts::findOrFail($id);
+        $aboutus->title= $request->input('title');
+        $aboutus->subtitle= $request->input('subtitle');
+        $aboutus->description= $request->input('description');
+        $aboutus->update();
+
+        return redirect('abouts')->with('status','Your Aboutus Details have been  updated!');
+
+    }
+
+    public function delete($id){
+        $aboutus= Abouts::findOrFail($id);
+        $aboutus->delete();
+            
+        return redirect('abouts')->with('status','Your Aboutus detail has been  deleted!');
+            
+     }     
 }
