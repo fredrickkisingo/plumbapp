@@ -12,11 +12,15 @@
         crossorigin='anonymous'>
     </head>
     <body>
+    <div id="app">
         @include('inc.navbar')
         <div class="container">
             @include('inc.messages')
+        </div>
+        <div class="container">
              @yield('content')
         </div>  
+    </div>    
         <!-- Scripts -->
     <script src="js/app.js"></script>
     <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>

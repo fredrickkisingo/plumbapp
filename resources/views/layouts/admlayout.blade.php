@@ -55,7 +55,7 @@
             </a>
           </li>
           <li class="{{ 'aboutus'==request()->path() ? 'active': ''}}">
-            <a href="/aboutus">
+            <a href="/abouts">
               <i class="now-ui-icons text_caps-small"></i>
               <p>About Us</p>
             </a>
@@ -148,7 +148,7 @@
 
       <div class="panel-header panel-header-sm">
       </div>
-      <div class="content">
+      <div class="content" style="height:500px;overflow-y:scroll">
        
         @yield('content')
 
@@ -199,6 +199,21 @@
   <script src="../assets/js/now-ui-dashboard.min.js?v=1.5.0" type="text/javascript"></script><!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
   <script src="../assets/demo/demo.js"></script>
 
+  <script src="{{asset('assets/js/dataTables.min.js') }}"></script>
+
+ {{-- this is for sweet alert --}}
+
+<script src="{{asset('assets/js/sweetalert.js')}}"></script>
+<script>
+  //sweet alert message
+   @if (session('status'))
+             swal({
+            title:'{{session('status') }}',
+            icon:'{{session('statuscode') }}',
+            button: "Done!",
+              });      
+   @endif
+</script>
   @yield('scripts')
 </body>
 
