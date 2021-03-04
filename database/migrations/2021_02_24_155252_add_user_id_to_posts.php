@@ -15,7 +15,7 @@ class AddUserIdToPosts extends Migration
     {
         Schema::table('posts', function (Blueprint $table) {
                 $table->Integer('user_id');
-                $table->Integer('quotation_price')->default('0');
+                $table->string('quotation_price')->default('0');
                 $table->integer('phone_number')->default('0');
 
         });
