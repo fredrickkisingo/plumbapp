@@ -25,13 +25,13 @@
   {{Form::label('phone_number','My Phone Number')}} {{Form::text('phone_number', '', ['class'=>'form-control ', 'placeholder'=>'Phone Number','maxlength'=>'13'])}}
 </div>
 <div class="form-group">
+  {{Form::label('photo_image','photo:')}} 
   {{Form::file('cover_image')}}
 </div>
-
  <div class="form-group">
-  {{Form::label('body','Job Description')}} 
-  {{Form::textarea('body', '', [ 'id'=> 'article-ckeditor','class'=>'form-control','placeholder'=>'Job Description'])}}
-</div>
+    {{Form::label('body','Job Description')}} 
+    {{Form::textarea('body', '', [ 'id'=> 'article-ckeditor','class'=>'form-control','placeholder'=>'Job Description'])}}
+  </div>
 
     
   
