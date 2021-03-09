@@ -9,8 +9,7 @@
          @foreach ($posts as  $post) {{-- Displays titles on the post table --}}
         <div class="col-sm-4">
             <div class="card" style="width: 18rem;">
-                <img style="width:100%; height: 16vw; object-fit: cover; " src="/storage/cover_images/{{$post->cover_image}}" class="card-img-top" />
-
+                <img style="width:100%; height: 16vw; object-fit: cover; " src="/storage/cover_images/{{$post->cover_image}}" class="card-img-top" /
                 <div class="card-body">
                     <h3>{{$post->title}}</a></h3>
                     <div class="quotation-price">
