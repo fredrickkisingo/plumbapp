@@ -10,7 +10,7 @@
                  <!-- Left Side Of Navbar -->       
                  <ul class="navbar-nav mr-auto">           
                   <li class="nav-item">
-                    <a class="nav-link" href="/about">About</a>
+                    <a class="nav-link" href="/about">About Us</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="/posts">Artisan's Galore</a>
