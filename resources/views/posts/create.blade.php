@@ -14,8 +14,8 @@
      {{Form::text('title', '', ['class'=>'form-control', 'placeholder'=>'Job Name'])}}
   </div>
  <div class="form-group col-md-6">
-  {{Form::label('quotation_price',' Job quotation price(KSH)')}} 
-  {{Form::text('quotation_price', '', ['class'=>'form-control ', 'placeholder'=>'Job quotation price'])}}
+  {{Form::label('quotation_price',' Job quotation price(KSH) per HR')}} 
+  {{Form::text('quotation_price', '', ['class'=>'form-control ', 'placeholder'=>'Job quotation price e.g 200-300ksh'])}}
 </div>
 <div class="form-group col-md-6">
   {{Form::label('location','My Location')}} 
