@@ -14,11 +14,6 @@ Registered Users| MkulimaBora Admin
           <div class="card-header">
             <h4 class="card-title"> Registered Users</h4>
             <h6> Usertype = 1-Admin, 5-Artisan,4-Customer</h6>
-                      {{-- @if(session('status'))
-                          <div class="alert alert-success">
-                              {{session('status')}}
-                          </div>
-                      @endif --}}
           </div>
           <div class="card-body">
             <div class="table-responsive" style="height:500px;overflow-y:scroll">
