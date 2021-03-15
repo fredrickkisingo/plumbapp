@@ -17,6 +17,8 @@
                     </div>
                     <small>Posted On {{$post->created_at}}</small><br>
                     <small>Artisan's Name:<b>{{$post->user->name}}</b></small><br>
+                    <small>Artisan's Location:<b>{{$post->location}}</b></small><br>
+
                     <small>Status: </span><span class="text-success"><strong>Available</strong></small><br>
                         <a href="/posts/{{$post->id}}" class="btn btn-primary">More Information</a>
                     
