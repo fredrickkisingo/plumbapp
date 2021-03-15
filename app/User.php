@@ -16,7 +16,11 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
+<<<<<<< HEAD
         'name', 'email', 'password','role_id',
+=======
+        'name', 'email', 'password',
+>>>>>>> subsequent plumbapp changes
     ];
 
     /**
@@ -36,8 +40,11 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+<<<<<<< HEAD
 
     public function posts(){
         return $this->hasMany('App\Post');
     }
+=======
+>>>>>>> subsequent plumbapp changes
 }

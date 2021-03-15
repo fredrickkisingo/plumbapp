@@ -14,13 +14,21 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/', 'PagesController@index');
 Route::get('/about', 'PagesController@about');
+<<<<<<< HEAD
 Auth::routes();
 
 
+=======
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+>>>>>>> subsequent plumbapp changes
 Route::get('/about',function(){
     return view('pages.about');
 });
 
+<<<<<<< HEAD
 Route::resource('posts','PostsController');
 
 
@@ -54,3 +62,8 @@ Route::group(['middleware'=>['auth','admin']],function(){
 
 
 });
+=======
+// Route::get('/users/{id}',function($id){
+//     return 'This is user'.$id;
+// });
+>>>>>>> subsequent plumbapp changes

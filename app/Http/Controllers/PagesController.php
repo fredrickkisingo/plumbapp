@@ -8,6 +8,10 @@ class PagesController extends Controller
 {
     public function index(){
         $title='Welcome to PLUMBAPP!';
+<<<<<<< HEAD
+=======
+        //return view('pages.index',compact('title'));
+>>>>>>> subsequent plumbapp changes
         return view('pages.index')->with('title',$title);
     }
 

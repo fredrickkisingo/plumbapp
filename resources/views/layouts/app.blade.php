@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
        <link rel="stylesheet" href="{{asset('css/app.css')}}">
+<<<<<<< HEAD
         <title>{{config('app.name','PLUMBAPP')}}</title>  
         
          <!-- Styles -->
@@ -27,5 +28,11 @@
         <script>
             CKEDITOR.replace( 'article-ckeditor' );
         </script>   
+=======
+        <title>{{config('app.name','PLUMBAPP')}}</title>   
+    </head>
+    <body>
+     @yield('content')
+>>>>>>> subsequent plumbapp changes
     </body>
 </html>

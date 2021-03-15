@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+<<<<<<< HEAD
        <h1>This is PLUMBAPP'S official about page</h1>
        <h2>This is a site for you as a home owner to get all your skilled personnel under one roof</h2>
             <p>1.With PLUMBAPP as a customer you get to find  the nearest artisan for your home repairs and  get that quality repair done.
@@ -9,3 +10,8 @@
             <p>3.A customer will be able to view for available artisans of his/her choice depending on what he wants to be done then contact him using the contact details provided by the artisan</p>
             <p>4.As an artisan registered with PLUMBAPP  you will post you job description together with the rates you charge and also location and contact details</p>
        @endsection
+=======
+       <h1><?php echo $title; ?></h1>
+       <p>This is for testing many things among them being about our site</p>
+ @endsection
+>>>>>>> subsequent plumbapp changes

@@ -67,7 +67,11 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'timezone' => 'Africa/Nairobi',
+=======
+    'timezone' => 'UTC',
+>>>>>>> subsequent plumbapp changes
 
     /*
     |--------------------------------------------------------------------------
@@ -161,7 +165,10 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+<<<<<<< HEAD
         Collective\Html\HtmlServiceProvider::class,
+=======
+>>>>>>> subsequent plumbapp changes
 
         /*
          * Package Service Providers...
@@ -227,9 +234,12 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+<<<<<<< HEAD
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
 
+=======
+>>>>>>> subsequent plumbapp changes
 
     ],
 

@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+<<<<<<< HEAD
 @include('inc.slider')
 <div class="jumbotron text-center">
        <h1>{{$title}}</h1>
@@ -8,4 +9,8 @@
               <p>Copyright &copy;2021 Fredrick Kisingo</p>
        </footer>
 </div>       
+=======
+       <h1>{{$title}}</h1>
+       <p>This is PLUMBAPP official site</p>
+>>>>>>> subsequent plumbapp changes
 @endsection

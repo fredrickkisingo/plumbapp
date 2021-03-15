@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "c82733f421265bc25b6531d53f3a3cf5",
+=======
+    "content-hash": "c3d88fa6639c9463d85260309c03bb68",
+>>>>>>> subsequent plumbapp changes
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -119,6 +123,7 @@
             "time": "2021-01-20T22:51:39+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "ckeditor/ckeditor",
             "version": "4.16.0",
             "source": {
@@ -167,6 +172,8 @@
             "time": "2021-01-27T08:14:09+00:00"
         },
         {
+=======
+>>>>>>> subsequent plumbapp changes
             "name": "dnoegel/php-xdg-base-dir",
             "version": "v0.1.1",
             "source": {
@@ -1108,6 +1115,7 @@
             "time": "2021-01-26T20:35:18+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "laravel/ui",
             "version": "v2.5.0",
             "source": {
@@ -1235,6 +1243,8 @@
             "time": "2020-12-15T20:20:05+00:00"
         },
         {
+=======
+>>>>>>> subsequent plumbapp changes
             "name": "league/commonmark",
             "version": "1.5.7",
             "source": {
