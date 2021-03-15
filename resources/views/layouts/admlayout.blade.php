@@ -28,10 +28,10 @@
     -->
       <div class="logo">
         <a href="http://www.creative-tim.com" class="simple-text logo-mini">
-          CT
+          P
         </a>
-        <a href="http://www.creative-tim.com" class="simple-text logo-normal">
-          Creative Tim
+        <a href="/admin/dashboard" class="simple-text logo-normal">
+          PLUMBAPP
         </a>
       </div>
       <div class="sidebar-wrapper" id="sidebar-wrapper">
@@ -54,10 +54,10 @@
               <p>Table List</p>
             </a>
           </li>
-          <li class="{{ 'aboutus'==request()->path() ? 'active': ''}}">
-            <a href="/abouts">
+          <li class="{{ 'artisanposts'==request()->path() ? 'active': ''}}">
+            <a href="/artisanposts">
               <i class="now-ui-icons text_caps-small"></i>
-              <p>About Us</p>
+              <p>Artisan's Posts</p>
             </a>
           </li>
           <li class="{{ './upgrade.html'==request()->path() ? 'active': ''}}">
