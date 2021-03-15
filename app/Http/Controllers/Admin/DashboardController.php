@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Post;
 use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -37,5 +38,19 @@ class DashboardController extends Controller
                         
                     return redirect('/role-register')->with('status','Your User has been  deleted!');
                         
-                 }           
+                 }   
+                 
+                 public function artisanposts(){
+                    $posts= Post::all();
+                   return view('admin.artisanposts')->with('posts',$posts);
+                }
+                public function artisanpostdelete($id){
+                    $posts= Post::findOrFail($id);
+                    $posts->delete();
+                        
+                    return redirect('/artisanposts')->with('status','Your Users post has been  deleted!');
+                        
+                 }  
+
+                
 }
