@@ -31,11 +31,18 @@ Route::group(['middleware'=>['auth','admin']],function(){
     Route::get('/admin/dashboard',function(){
         return view('admin.dashboard');
     });
+    //for the users profile
     Route::get('/role-register','Admin\DashboardController@register');
     Route::put('/role-register-update/{id}','Admin\DashboardController@registerupdate');
     Route::get('/role-edit/{id}','Admin\DashboardController@registeredit');
     Route::delete('/role-delete/{id}','Admin\DashboardController@registerdelete');
    
+    //for the posts profile
+    Route::get('/artisanposts','Admin\DashboardController@artisanposts');
+    Route::delete('/artisanpost-delete/{id}','Admin\DashboardController@artisanpostdelete');
+
+
+    //abouts profile
     Route::get('/abouts', 'Admin\AboutusController@index');
     Route::post('/save-aboutus','Admin\AboutusController@store');
     Route::get('/about-us/{id}','Admin\AboutusController@edit');
