@@ -14,7 +14,7 @@
         {{Form::text('title', $post->title, ['class'=>'form-control','placeholder'=>'Job Name'])}}
       </div>
       <div class="form-group col-md-6">
-        {{Form::label('quotation_price','Price (KSH)')}} 
+        {{Form::label('quotation_price','Price in (KSH)')}} 
         {{Form::text('quotation_price', $post->quotation_price, ['class'=>'form-control ', 'placeholder'=>'Price (KSH)'])}}
       </div>
        <div class="form-group col-md-6">
