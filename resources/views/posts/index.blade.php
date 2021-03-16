@@ -13,7 +13,7 @@
                 <div class="card-body">
                     <h3>{{$post->title}}</a></h3>
                     <div class="quotation-price">
-                        <div class="pricetext"><i style='font-size:16px' class='fas'>&#xf0d6;</i><b> Ksh {{$post->quotation_price}}</b></div>
+                        <div class="pricetext"><i style='font-size:16px' class='fas'>&#xf0d6;</i><b> Ksh {{$post->quotation_price}}per hr</b></div>
                     </div>
                     <small>Posted On {{$post->created_at}}</small><br>
                     <small>Artisan's Name:<b>{{$post->user->name}}</b></small><br>
