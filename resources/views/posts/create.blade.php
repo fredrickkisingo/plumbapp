@@ -23,7 +23,7 @@
   {{Form::text('location', '', ['class'=>'form-control ', 'placeholder'=>'My Location'])}}
 </div>
 <div class="form-group col-md-6">
-  {{Form::label('phone_number','My Phone Number')}} {{Form::text('phone_number', '', ['class'=>'form-control ', 'placeholder'=>'Phone Number','maxlength'=>'13'])}}
+  {{Form::label('phone_number','My Phone Number ')}} {{Form::text('phone_number', '', ['class'=>'form-control ', 'placeholder'=>' e.g 254...','maxlength'=>'12'])}}
 </div>
 <div class="form-group">
   {{Form::label('photo_image','photo:')}} 
