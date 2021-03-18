@@ -15,8 +15,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'PagesController@index');
 Route::get('/about', 'PagesController@about');
 Auth::routes();
-
-
 Route::get('/about',function(){
     return view('pages.about');
 });
