@@ -13,10 +13,15 @@
         <aside class="col-sm-7">
 
        <aside class="col-sm-7">
-        <article class="card-body p-5">  
-          <dt>Phone Number</dt>
-            <dd>+254{!!$post->phone_number!!}</dd>
-          </dl>    
+        <article class="card-body p-5"> 
+          <dl class="item-property"> 
+              <dt>Phone Number</dt>
+              <?php
+              $phone=$post->phone_number;
+              ?>
+                <a href="tel:+{{$post->phone_number}}"><dd><i class="fa fa-phone" style='font-size:16px' aria-hidden="true"></i>+{!!$post->phone_number!!}</dd></a>
+          </dl>   
+         
                                          
           <!-- artisan's-detail-wrap .// -->
           <dl class="item-property">
