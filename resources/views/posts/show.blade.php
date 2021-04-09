@@ -37,12 +37,19 @@
               {{$post->user->name}}
             </dd>
           </dl>
-    
+
+          <!-- item-property-hor .// -->
+          <dl class="param param-feature">
+            <dt>Artisan's Location</dt>
+            <dd>{{$post->location}}</dd>
+          </dl>
+          
           <!-- item-property-hor .// -->
           <dl class="param param-feature">
             <dt>Posted On</dt>
             <dd>{{$post->created_at}}</dd>
           </dl>
+           
           <p class="price-detail-wrap">
             <span class="price h3 text-info"> 
 		        <span class="currency">KSH </span><span class="num">{!!$post->quotation_price!!}</span>

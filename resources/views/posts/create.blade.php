@@ -18,6 +18,7 @@
   {{Form::text('quotation_price', '', ['class'=>'form-control ', 'placeholder'=>'Job quotation price e.g 200-300ksh'])}}
 </div>
 
+
 <div class="form-group col-md-6">
   {{Form::label('location','My Location')}} 
   {{Form::text('location', '', ['class'=>'form-control ', 'placeholder'=>'My Location'])}}

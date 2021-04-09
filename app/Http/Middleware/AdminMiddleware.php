@@ -22,7 +22,7 @@ class AdminMiddleware
 
         }else
         {
-            return redirect('/dashboard')->with('status','You are not authorised to access this page');
+            return redirect('/dashboard')->with('error','You are not authorised to access that page !!');
         }
     }
 }
