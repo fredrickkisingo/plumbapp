@@ -4,7 +4,7 @@
 <div class="container">
     <h1>Artisans Galore</h1>
     <div class="row">
-        {{-- Carries data from the ProductsController with the variable posts --}}
+        {{-- Carries data from the ProductsController with the variable $posts --}}
          @if(count($posts)>0) 
          @foreach ($posts as  $post) {{-- Displays titles on the post table --}}
         <div class="col-sm-4">

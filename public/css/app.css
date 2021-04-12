@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Nunito);@charset"UTF-8";
 
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
@@ -10941,6 +10941,17 @@ a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .card-img-top {
+    height: 18vw !important;
+    width:100% !important;
+  }
+  .card-body{
+    height:60vw !important;
+    width:100% !important;
   }
 }
 
