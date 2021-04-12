@@ -48,6 +48,10 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
+
+        //regex:/^[\pL\s\-\']+$/u- regex for letters only
+        //numeric|regex:/0[0-9]{9}+$/u -regex for numbers
+        
         $this->validate($request,[
             'title'=> 'required',
             'phone_number' => 'required',
