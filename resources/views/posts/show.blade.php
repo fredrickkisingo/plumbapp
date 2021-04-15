@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@if(!Auth::guest())
 @section('content')
 <div class="container">
 <a href="/posts" class="btn btn-primary">Go Back</a>
@@ -57,7 +57,7 @@
             <span>/per hr</span>
           </p>  
           <hr> 
-          @if(!Auth::guest())
+         
           @if(Auth::user()->id ==$post->user_id)
           <a href="/posts/{{$post->id}}/edit" class="btn btn-warning">Edit</a>    
               {!!Form::open(['action'=>['PostsController@destroy', $post->id], 'method'=>'POST','class'=>'float-right'])!!} 
@@ -65,10 +65,11 @@
               {{Form::submit('Delete', ['class'=>'btn btn-danger'])}} 
               {!!Form::close()!!}
           @endif   
-          @endif  
+         
         </article>
         <!-- card-body.// -->
       </aside>    
    </div>
   </div>
 @endsection
+@endif 

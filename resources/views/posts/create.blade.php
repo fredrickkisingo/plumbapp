@@ -2,7 +2,6 @@
 @section('content')
 <div class="container">
   <a href="/posts" class="btn btn-primary">Go Back</a>
-
 <h1>Create your profile</h1>
 {!! Form::open(['action'=>'PostsController@store','method'=>'POST','enctype'=>'multipart/form-data']) !!}
 {{-- <div class="form-row"> --}}
